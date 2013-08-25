@@ -43,13 +43,6 @@ GEM
     bson_ext (1.9.2)
       bson (~> 1.9.2)
     builder (3.1.4)
-    coffee-rails (4.0.0)
-      coffee-script (>= 2.2.0)
-      railties (>= 4.0.0.beta, < 5.0)
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.6.3)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.0)
@@ -103,11 +96,6 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
-    sass (3.2.10)
-    sass-rails (4.0.0)
-      railties (>= 4.0.0.beta, < 5.0)
-      sass (>= 3.1.10)
-      sprockets-rails (~> 2.0.0)
     sdoc (0.3.20)
       json (>= 1.1.3)
       rdoc (~> 3.10)
@@ -138,12 +126,10 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby
   bson_ext
-  coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
   mongo_mapper!
   rails (= 4.0.0)
   rspec-rails
-  sass-rails (~> 4.0.0)
   sdoc
   uglifier (>= 1.3.0)
