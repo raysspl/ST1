@@ -5,7 +5,7 @@ Blog1::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  resources :welcome, :about, :contact, :signup, :posts do 
+  resources :posts do 
     resources :comments
   end
 
@@ -13,6 +13,8 @@ Blog1::Application.routes.draw do
 
   get "login" => "sessions#new"
   post "login" => "sessions#create"
+  delete "logout" => "sessions#destroy"
+  get "logout" => "sessions#destroy"
 
   root to: "welcome#index"
   # Example of regular route:
