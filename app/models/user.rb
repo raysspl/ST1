@@ -1,7 +1,6 @@
 class User
   include MongoMapper::Document
 
-   
   before_save :encrypt_password
   
   attr_accessor :password, :password_confirmation
@@ -10,7 +9,6 @@ class User
   key :salt, String
   key :fish, String
   key :code, String
-
 
   def self.authenticate(email, password)
     user = User.find_by_email(email)
